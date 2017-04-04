@@ -5,13 +5,39 @@
   <h2 class="sw-cv__title">{{cvCtrl.person.name}}</h2>
   <img class="sw-cv__face" ng-src="img/people/{{cvCtrl.person.name}}.jpg"></img>
 
-  <p class="sw-cv__description">
-    Gender: {{cvCtrl.person.gender}}<br>
-    Height: {{cvCtrl.person.height}}<br>
-    Mass: {{cvCtrl.person.mass}}<br>
-    Eye color: {{cvCtrl.person.eye_color}}<br>
-    Birth year: {{cvCtrl.person.birth_year}}<br>
-    Homeworld: {{cvCtrl.person.homeworld}}<br>
-  </p>
+  <table class="sw-cv__description">
+    <tr>
+      <td class="sw-cv__prop-name">Gender:</td>
+      <td class="sw-cv__prop-value">{{cvCtrl.person.gender}}</td>
+    </tr>
+    <tr>
+      <td class="sw-cv__prop-name">Height: </td>
+      <td class="sw-cv__prop-value">{{cvCtrl.person.height}}</td>
+    </tr>
+    <tr>
+      <td class="sw-cv__prop-name">Mass:</td>
+      <td class="sw-cv__prop-value">{{cvCtrl.person.mass}}</td>
+    </tr>
+    <tr>
+      <td class="sw-cv__prop-name">Eye color:</td>
+      <td class="sw-cv__prop-value">{{cvCtrl.person.eye_color}}</td>
+    </tr>
+    <tr>
+      <td class="sw-cv__prop-name">Hair color:</td>
+      <td class="sw-cv__prop-value">{{cvCtrl.person.hair_color}}</td>
+    </tr> 
+    <tr>
+      <td class="sw-cv__prop-name">Skin color:</td>
+      <td class="sw-cv__prop-value">{{cvCtrl.person.skin_color}}</td>
+    </tr> 
+    <tr>
+      <td class="sw-cv__prop-name">Birth year:</td>
+      <td class="sw-cv__prop-value">{{cvCtrl.person.birth_year}}</td>
+    </tr>
+    <tr>
+      <td class="sw-cv__prop-name">Homeworld:</td>
+      <td class="sw-cv__prop-value">{{cvCtrl.person.homeworld}}</td>
+    </tr> 
+  </table>
   
 </section>

@@ -121,8 +121,8 @@ html {
   float: left;
   margin-right: 1rem;
   vertical-align: top;
-  width: 10rem;
-  height: 10rem;
+  width: 9rem;
+  height: 9rem;
 }
 
 .sw-cv__title {
@@ -134,8 +134,18 @@ html {
 }
 
 .sw-cv__description {
+  padding: 0.625rem;
   font-size: 1rem;
   line-height: normal;
   font-weight: normal;
   color: #000;
+}
+
+.sw-cv__prop-name {
+  text-align: right;
+}
+
+.sw-cv__prop-value {
+  padding-left: 1rem;
+  text-align: left;
 }
