@@ -1,0 +1,14 @@
+<section class="sw-content sw-wrapper">
+  <div class="sw-content__controls">
+    <button class="btn btn-default" ng-click="mainCtrl.setFilter('male')" type="button"
+        ng-class="{'btn-default__selected':mainCtrl.filter=='male'}">male</button>
+    <button class="btn btn-default" ng-click="mainCtrl.setFilter('female')" type="button"
+        ng-class="{'btn-default__selected':mainCtrl.filter=='female'}">female</button>
+    <button class="btn btn-default" ng-click="mainCtrl.setFilter('other')" type="button"
+        ng-class="{'btn-default__selected':mainCtrl.filter=='other'}">other</button>
+    <button class="btn btn-default" ng-click="mainCtrl.setFilter('all')" type="button" 
+        ng-class="{'btn-default__selected':mainCtrl.filter=='all'}">all</button>
+  </div>
+  <sw-person ng-repeat="person in mainCtrl.persons | galleryFilter:mainCtrl.filter" 
+              class="sw-person"></sw-person>
+</section>
